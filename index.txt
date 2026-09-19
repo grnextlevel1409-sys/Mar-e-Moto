@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pousada Mar e Moto — Guaratuba, Paraná</title>
+  <meta name="description" content="Conforto para descansar e liberdade para seguir viagem em Guaratuba, Paraná." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            petrol: '#17363f',
+            petrolDark: '#0e2329',
+            wood: '#5c4332',
+            gold: '#d4af37',
+            cream: '#fbfaf7',
+            whatsapp: '#25D366'
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-overlay {
+      background: linear-gradient(to top, rgba(14, 35, 41, 0.95) 0%, rgba(14, 35, 41, 0.6) 50%, rgba(0, 0, 0, 0.4) 100%);
+    }
+  </style>
+</head>
+<body class="bg-cream text-neutral-800 font-sans antialiased selection:bg-gold selection:text-white">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-petrolDark/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-5 lg:px-10 h-20 flex items-center justify-between">
+      <a href="#inicio" class="text-white tracking-widest flex flex-col">
+        <span class="text-[0.65rem] uppercase text-gold font-semibold tracking-[0.25em]">Guaratuba · PR</span>
+        <span class="font-display text-2xl tracking-wider">MAR E MOTO</span>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.16em] text-white/80 font-medium">
+        <a href="#inicio" class="hover:text-gold transition">Início</a>
+        <a href="#apresentacao" class="hover:text-gold transition">A Pousada</a>
+        <a href="#experiencia" class="hover:text-gold transition">Experiência</a>
+        <a href="#galeria" class="hover:text-gold transition">Galeria</a>
+        <a href="#localizacao" class="hover:text-gold transition">Localização</a>
+        <a href="#reservas" class="hover:text-gold transition">Contato</a>
+      </nav>
+
+      <!-- CTA Desktop -->
+      <div class="hidden md:block">
+        <a href="#reservas" class="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-petrolDark text-xs font-bold uppercase tracking-widest px-6 py-3 transition">
+          Reservar
+        </a>
+      </div>
+
+      <!-- Botão Menu Mobile -->
+      <button id="menu-btn" class="md:hidden text-white p-2 focus:outline-none" aria-label="Abrir menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Gaveta Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-petrolDark border-b border-white/10 px-6 py-6 space-y-4 text-xs uppercase tracking-widest text-white/90">
+      <a href="#inicio" class="block py-2 hover:text-gold mobile-link">Início</a>
+      <a href="#apresentacao" class="block py-2 hover:text-gold mobile-link">A Pousada</a>
+      <a href="#experiencia" class="block py-2 hover:text-gold mobile-link">Experiência</a>
+      <a href="#galeria" class="block py-2 hover:text-gold mobile-link">Galeria</a>
+      <a href="#localizacao" class="block py-2 hover:text-gold mobile-link">Localização</a>
+      <a href="#reservas" class="block py-2 hover:text-gold mobile-link">Contato</a>
+      <a href="#reservas" class="block py-3 text-center bg-gold text-petrolDark font-bold mt-4 mobile-link">Reservar pelo WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative min-h-[92vh] flex items-end pb-16 pt-32 text-white bg-petrolDark">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
+    <div class="hero-overlay absolute inset-0"></div>
+
+    <div class="relative max-w-7xl mx-auto px-5 lg:px-10 w-full">
+      <span class="inline-block text-gold text-xs font-semibold tracking-[0.25em] uppercase mb-4">Guaratuba · Paraná · Brasil</span>
+      <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl max-w-4xl leading-[1.02] mb-6">
+        Pousada<br />Mar e Moto
+      </h1>
+      <p class="text-base sm:text-xl text-white/85 max-w-xl font-light mb-10 leading-relaxed">
+        Conforto para descansar. Liberdade para seguir viagem.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+        <a href="#reservas" class="inline-flex items-center gap-3 bg-gold hover:bg-gold/90 text-petrolDark font-bold text-xs uppercase tracking-widest px-8 py-4 shadow-lg transition">
+          RESERVAR PELO WHATSAPP
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+        <a href="#apresentacao" class="inline-flex items-center gap-2 text-white/70 hover:text-white text-xs uppercase tracking-widest px-4 py-4 transition">
+          Conheça a Pousada ↓
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- APRESENTAÇÃO -->
+  <section id="apresentacao" class="py-24 max-w-7xl mx-auto px-5 lg:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div>
+        <span class="text-xs font-semibold tracking-[0.25em] text-petrol uppercase">Boas-vindas</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-neutral-900 mt-4 leading-tight">
+          Seu ponto de descanso em Guaratuba
+        </h2>
+        <p class="mt-6 text-neutral-600 leading-relaxed text-base sm:text-lg">
+          Uma pousada acolhedora para quem deseja fazer uma pausa, aproveitar a cidade e recarregar as energias antes de continuar o caminho.
+        </p>
+        
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 border-y border-neutral-200 py-6 gap-6 sm:gap-4">
+          <div class="flex items-center gap-3">
+            <span class="text-xl">📍</span>
+            <span class="text-xs font-semibold tracking-wider text-neutral-700 uppercase">Guaratuba, PR</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xl">🛏️</span>
+            <span class="text-xs font-semibold tracking-wider text-neutral-700 uppercase">Conforto</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xl">🏍️</span>
+            <span class="text-xs font-semibold tracking-wider text-neutral-700 uppercase">Viajantes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="aspect-[4/3] w-full overflow-hidden shadow-xl border border-neutral-200 bg-neutral-100">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80" alt="Quarto aconchegante da Pousada Mar e Moto" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute -bottom-4 -left-4 bg-petrolDark text-white px-5 py-3 text-xs tracking-widest font-semibold uppercase">
+          Quartos Reais
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A POUSADA -->
+  <section id="a-pousada" class="bg-neutral-100 py-24 border-y border-neutral-200">
+    <div class="max-w-7xl mx-auto px-5 lg:px-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="relative order-2 lg:order-1">
+          <div class="aspect-[5/4] w-full overflow-hidden shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Fachada Pousada Mar e Moto" class="w-full h-full object-cover" />
+          </div>
+          <div class="absolute -bottom-5 right-5 bg-petrol text-white px-6 py-4 shadow-lg">
+            <span class="font-display text-2xl">Guaratuba</span>
+            <span class="ml-2 text-xs text-gold font-bold">PR</span>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2 lg:pl-6">
+          <span class="text-xs font-semibold tracking-[0.25em] text-petrol uppercase">A Pousada</span>
+          <h2 class="font-display text-4xl sm:text-5xl text-neutral-900 mt-4 leading-tight">
+            Conheça a<br />Mar e Moto
+          </h2>
+          <p class="mt-6 text-neutral-600 leading-relaxed text-base sm:text-lg">
+            A Mar e Moto nasceu para receber viajantes com simplicidade, cuidado e personalidade. Em Guaratuba, é um ponto de chegada tranquilo para descansar entre a praia, a cidade e a estrada.
+          </p>
+          <p class="mt-4 text-neutral-600 leading-relaxed text-base sm:text-lg">
+            Cada espaço foi preparado com carinho: ambientes acolhedores, ar-condicionado, detalhes rústicos e a atmosfera descomplicada de quem sabe receber bem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia" class="py-24 max-w-7xl mx-auto px-5 lg:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-end mb-16">
+      <div>
+        <span class="text-xs font-semibold tracking-[0.25em] text-petrol uppercase">Experiência Mar e Moto</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-neutral-900 mt-4 leading-tight">
+          Mais que uma hospedagem.<br />Uma experiência.
+        </h2>
+      </div>
+      <div>
+        <p class="text-neutral-600 leading-relaxed">
+          Chegue, relaxe e aproveite Guaratuba. Na Mar e Moto, cada momento é uma oportunidade para descansar e aproveitar a viagem.
+        </p>
+        <a href="#a-pousada" class="inline-flex items-center gap-2 text-petrol font-semibold text-xs uppercase tracking-widest mt-4 hover:text-gold transition">
+          Conheça a Pousada →
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-petrol text-white p-8 sm:p-10 flex flex-col justify-between min-h-[320px]">
+        <span class="font-display text-5xl text-gold">01</span>
+        <div>
+          <h3 class="font-display text-3xl mb-3">🏖️ Guaratuba</h3>
+          <p class="text-white/80 text-sm leading-relaxed">
+            Aproveite a cidade, a praia e tudo o que Guaratuba tem para oferecer.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-wood text-white p-8 sm:p-10 flex flex-col justify-between min-h-[320px]">
+        <span class="font-display text-5xl text-gold">02</span>
+        <div>
+          <h3 class="font-display text-3xl mb-3">🛏️ Conforto</h3>
+          <p class="text-white/80 text-sm leading-relaxed">
+            Um espaço preparado para você descansar depois de um dia de viagem ou passeio.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-petrolDark text-white p-8 sm:p-10 flex flex-col justify-between min-h-[320px]">
+        <span class="font-display text-5xl text-gold">03</span>
+        <div>
+          <h3 class="font-display text-3xl mb-3">🏍️ Liberdade para viajar</h3>
+          <p class="text-white/80 text-sm leading-relaxed">
+            Chegue, descanse e siga sua jornada com tranquilidade e autonomia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="bg-neutral-900 py-24 text-white">
+    <div class="max-w-7xl mx-auto px-5 lg:px-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-semibold tracking-[0.25em] text-gold uppercase">Galeria</span>
+          <h2 class="font-display text-4xl sm:text-5xl mt-3">Um pouco da nossa pousada</h2>
+        </div>
+        <p class="text-neutral-400 text-sm max-w-sm">
+          Fotos reais dos nossos quartos e acomodações. Clique para ampliar cada detalhe.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="cursor-pointer overflow-hidden group aspect-[4/3] bg-neutral-800" onclick="openLightbox('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80')">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Quarto Casal" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-90" />
+        </div>
+        <div class="cursor-pointer overflow-hidden group aspect-[4/3] bg-neutral-800" onclick="openLightbox('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80')">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Quarto Família" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-90" />
+        </div>
+        <div class="cursor-pointer overflow-hidden group aspect-[4/3] bg-neutral-800" onclick="openLightbox('https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80')">
+          <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80" alt="Acomodações" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-90" />
+        </div>
+        <div class="cursor-pointer overflow-hidden group aspect-[4/3] bg-neutral-800" onclick="openLightbox('https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80')">
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Detalhes do Quarto" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-90" />
+        </div>
+        <div class="cursor-pointer overflow-hidden group aspect-[4/3] bg-neutral-800" onclick="openLightbox('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80')">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Espaço Aconchegante" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-90" />
+        </div>
+        <div class="cursor-pointer overflow-hidden group aspect-[4/3] bg-neutral-800" onclick="openLightbox('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80')">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Fachada" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-90" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL LIGHTBOX -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4">
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl font-light hover:text-gold transition focus:outline-none">&times;</button>
+    <img id="lightbox-img" src="" alt="Imagem ampliada" class="max-w-full max-h-[85vh] object-contain shadow-2xl border border-white/10" />
+  </div>
+
+  <!-- SEÇÃO MAR E MOTO -->
+  <section class="bg-petrol text-white py-24 text-center px-5">
+    <div class="max-w-3xl mx-auto">
+      <span class="text-3xl mb-4 block">🏍️</span>
+      <span class="text-xs font-semibold tracking-[0.25em] text-gold uppercase block mb-3">Mar · Estrada · Hospitalidade</span>
+      <h2 class="font-display text-4xl sm:text-6xl mb-6 leading-tight">Para quem ama viajar</h2>
+      <p class="text-white/80 text-base sm:text-lg leading-relaxed font-light">
+        Um lugar para chegar, descansar, aproveitar Guaratuba e seguir viagem.
+      </p>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section id="localizacao" class="py-24 max-w-7xl mx-auto px-5 lg:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-xs font-semibold tracking-[0.25em] text-petrol uppercase">Localização</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-neutral-900 mt-4 mb-6">Estamos em Guaratuba</h2>
+        
+        <p class="font-semibold text-lg text-neutral-800">Pousada Mar e Moto</p>
+        <p class="text-neutral-600 mt-2 leading-relaxed">
+          Avenida Curitiba, Av. Brejatuba, 1070<br />
+          Guaratuba — PR, 83280-000
+        </p>
+
+        <div class="mt-8">
+          <a 
+            href="https://maps.app.goo.gl/K7cwAsCKDFPavRRJ7?g_st=ac" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="inline-flex items-center gap-3 bg-petrol hover:bg-petrolDark text-white font-bold text-xs uppercase tracking-widest px-8 py-4 transition shadow-md"
+          >
+            <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            COMO CHEGAR
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-neutral-200 aspect-[4/3] w-full flex items-center justify-center p-8 text-center border border-neutral-300 shadow-inner">
+        <div>
+          <span class="text-4xl block mb-3">📍</span>
+          <p class="font-display text-2xl text-neutral-800">Guaratuba — PR</p>
+          <p class="text-xs text-neutral-500 uppercase tracking-widest mt-1">Litoral Paranaense</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÁREA DE RESERVAS & CONTATOS -->
+  <section id="reservas" class="bg-neutral-100 py-24 border-t border-neutral-200">
+    <div class="max-w-5xl mx-auto px-5 lg:px-10 text-center">
+      <span class="text-3xl block mb-2">📲</span>
+      <span class="text-xs font-semibold tracking-[0.25em] text-petrol uppercase">Reservas e Contato</span>
+      <h2 class="font-display text-4xl sm:text-5xl text-neutral-900 mt-3 mb-4">Consulte sua estadia</h2>
+      <p class="text-neutral-600 max-w-xl mx-auto mb-16">
+        Escolha com quem você deseja falar e verifique a disponibilidade de datas diretamente no WhatsApp.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+        <!-- Silvana -->
+        <div class="bg-white p-8 sm:p-10 border border-neutral-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold tracking-widest text-neutral-400 uppercase">Atendimento 01</span>
+            <h3 class="font-display text-3xl text-neutral-900 mt-2">Fale com a Silvana</h3>
+            <p class="text-neutral-500 text-sm mt-2">+55 41 9 9613-5282</p>
+          </div>
+          <div class="mt-8">
+            <a 
+              href="https://wa.me/5541996135282?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20da%20Pousada%20Mar%20e%20Moto." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full inline-flex items-center justify-center gap-3 bg-whatsapp hover:bg-green-600 text-white font-bold text-xs uppercase tracking-widest py-4 px-6 transition"
+            >
+              WHATSAPP DA SILVANA
+            </a>
+          </div>
+        </div>
+
+        <!-- Edson -->
+        <div class="bg-white p-8 sm:p-10 border border-neutral-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold tracking-widest text-neutral-400 uppercase">Atendimento 02</span>
+            <h3 class="font-display text-3xl text-neutral-900 mt-2">Fale com o Edson</h3>
+            <p class="text-neutral-500 text-sm mt-2">+55 41 9 9831-8561</p>
+          </div>
+          <div class="mt-8">
+            <a 
+              href="https://wa.me/5541998318561?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20da%20Pousada%20Mar%20e%20Moto." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full inline-flex items-center justify-center gap-3 bg-whatsapp hover:bg-green-600 text-white font-bold text-xs uppercase tracking-widest py-4 px-6 transition"
+            >
+              WHATSAPP DO EDSON
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-sm text-neutral-500 mt-12 font-medium">
+        Estamos esperando por você em Guaratuba.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-petrolDark text-white py-16 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 lg:px-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+        <div>
+          <span class="font-display text-2xl tracking-wider block">POUSADA MAR E MOTO</span>
+          <p class="text-white/60 text-sm mt-3 leading-relaxed">
+            Conforto para descansar. Liberdade para seguir viagem.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-2 text-xs uppercase tracking-widest text-white/70">
+          <a href="#inicio" class="hover:text-gold transition">Início</a>
+          <a href="#apresentacao" class="hover:text-gold transition">A Pousada</a>
+          <a href="#experiencia" class="hover:text-gold transition">Experiência</a>
+          <a href="#galeria" class="hover:text-gold transition">Galeria</a>
+          <a href="#localizacao" class="hover:text-gold transition">Localização</a>
+          <a href="#reservas" class="hover:text-gold transition">Reservas</a>
+        </div>
+
+        <div>
+          <span class="text-xs uppercase tracking-[0.2em] text-gold font-bold block mb-3">Instagram Oficial</span>
+          <a 
+            href="https://www.instagram.com/pousadamaremotoguaratuba?stkn=MXhyYWRrbDZ1dG4wdw==" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="text-sm text-white/80 hover:text-gold transition inline-flex items-center gap-2"
+          >
+            📸 @pousadamaremotoguaratuba
+          </a>
+          <p class="text-xs text-white/50 mt-4">
+            Guaratuba — Paraná, Brasil
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
+        <span>© 2026 Pousada Mar e Moto. Todos os direitos reservados.</span>
+        <span>Desenvolvido com padrão GR NEXT LEVEL</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    function openLightbox(src) {
+      lightboxImg.src = src;
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      lightboxImg.src = '';
+    }
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>
